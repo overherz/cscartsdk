@@ -5,10 +5,10 @@
         {
             "type": "package",
             "package": {
-                "name": "overherz/cscart-upgrade-builde",
+                "name": "overherz/cscart_upgrade_build",
                 "version": "master",
                 "source": {
-                    "url": "https://github.com/overherz/cscart-upgrade-builder",
+                    "url": "https://github.com/overherz/cscart_upgrade_builder",
                     "type": "git",
                     "reference": "master"
                 }
@@ -19,7 +19,7 @@
         "symfony/console": "~3.0",
         "symfony/filesystem": "~3.0",
         "ext-mbstring": "*",
-        "overherz/cscart-upgrade-builder ": "*",
+        "overherz/cscart_upgrade_builder ": "*",
         "ext-simplexml": "*"
     },
     "autoload": {
