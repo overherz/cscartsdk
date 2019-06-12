@@ -5,10 +5,10 @@
         {
             "type": "package",
             "package": {
-                "name": "cscart/upgrade-builder",
+                "name": "overherz/overherz-upgrade-builder",
                 "version": "master",
                 "source": {
-                    "url": "https://github.com/overherz/upgrade-builder",
+                    "url": "https://github.com/overherz/overherz-upgrade-builder",
                     "type": "git",
                     "reference": "master"
                 }
