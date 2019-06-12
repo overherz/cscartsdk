@@ -1,20 +1,6 @@
 {
     "name": "overherz/cscartsdk",
     "description": "Command-line tools for CS-Cart & Multivendor developers",
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "overherz/cscartupgradebuilder",
-                "version": "master",
-                "source": {
-                    "url": "https://github.com/overherz/cscartupgradebuilder",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
     "require": {
         "symfony/console": "~3.0",
         "symfony/filesystem": "~3.0",
