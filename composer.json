@@ -19,7 +19,7 @@
         "symfony/console": "~3.0",
         "symfony/filesystem": "~3.0",
         "ext-mbstring": "*",
-        "overherz-cscart/upgrade-builder ": "*",
+        "overherz/cscart-upgrade-builder ": "*",
         "ext-simplexml": "*"
     },
     "autoload": {
