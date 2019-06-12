@@ -1,5 +1,5 @@
 {
-    "name": "overherzcscart/sdk",
+    "name": "overherz-cscart/sdk",
     "description": "Command-line tools for CS-Cart & Multivendor developers",
     "repositories": [
         {
@@ -19,7 +19,7 @@
         "symfony/console": "~3.0",
         "symfony/filesystem": "~3.0",
         "ext-mbstring": "*",
-        "overherz/upgrade-builder": "dev-master",
+        "overherz/overherz-upgrade-builder": "dev-master",
         "ext-simplexml": "*"
     },
     "autoload": {
