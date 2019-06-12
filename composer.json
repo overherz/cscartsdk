@@ -8,7 +8,7 @@
                 "name": "overherz/cscart-upgrade-builde",
                 "version": "master",
                 "source": {
-                    "url": "https://github.com/overherz/upgrade-builder",
+                    "url": "https://github.com/overherz/cscart-upgrade-builder",
                     "type": "git",
                     "reference": "master"
                 }
