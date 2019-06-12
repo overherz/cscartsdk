@@ -12,8 +12,8 @@ foreach ([
 }
 
 foreach ([
-             __DIR__ . '/../vendor/cscart/upgrade-builder/autoloader.php',
-             __DIR__ . '/vendor/cscart/upgrade-builder/autoloader.php',
+             __DIR__ . '/../vendor/overherz/cscartupgradebuilder/autoloader.php',
+             __DIR__ . '/vendor/overherz/cscartupgradebuilder/autoloader.php',
          ] as $file) {
     if (file_exists($file)) {
         require_once $file;
