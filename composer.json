@@ -1,5 +1,5 @@
 {
-    "name": "overherz-cscart/sdk",
+    "name": "overherz/cscartsdk",
     "description": "Command-line tools for CS-Cart & Multivendor developers",
     "repositories": [
         {
