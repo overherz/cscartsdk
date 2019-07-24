@@ -74,7 +74,7 @@ class AddonSymlinkCommand extends Command
             // Always ignore "design/themes/" masks because there shouldn't
             // be such directory in add-on files directory
             if (mb_strpos($glob_mask, 'design/themes/') === 0) {
-                return false;
+                //return false;
             }
 
             return true;
