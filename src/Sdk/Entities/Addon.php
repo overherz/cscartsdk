@@ -45,19 +45,9 @@ class Addon
             "design/backend/templates/addons/{$this->id}",
 
             // Frontend templates and assets
-            "design/themes/**/css/addons/{$this->id}",
-            "design/themes/**/templates/addons/{$this->id}",
-            "design/themes/**/layouts/addons/{$this->id}",
-            "design/themes/**/mail/templates/addons/{$this->id}",
-            "design/themes/**/media/images/addons/{$this->id}",
-            "design/themes/**/media/images/logos/addons/{$this->id}", 
+            "design/themes/**",
             
-            "var/themes_repository/**/css/addons/{$this->id}",
-            "var/themes_repository/**/templates/addons/{$this->id}",
-            "var/themes_repository/**/layouts/addons/{$this->id}",
-            "var/themes_repository/**/mail/templates/addons/{$this->id}",
-            "var/themes_repository/**/media/images/addons/{$this->id}",
-            "var/themes_repository/**/media/images/logos/addons/{$this->id}",
+            "var/themes_repository/**",
         ];
 
         if (file_exists($this->getXmlSchemePath())) {
