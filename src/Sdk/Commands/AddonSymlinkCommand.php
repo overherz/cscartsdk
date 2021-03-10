@@ -133,6 +133,7 @@ class AddonSymlinkCommand extends Command
                 ) . basename($abs_cart_filepath)
                 : $abs_addon_filepath;
 
+            $abs_cart_filepath = str_replace('full_themes', 'themes', $abs_cart_filepath);
             $fs->symlink(
                 $symlink_target_filepath,
                 $abs_cart_filepath
