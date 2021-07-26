@@ -91,7 +91,9 @@ class AddonSymlinkCommand extends Command
 
             // Add-on templates at the "var/themes_repository/" directory will be
             // symlinked to the "design/themes/" directory.
-            if ($input->getOption('templates-to-design') && mb_strpos($rel_filepath, 'var/themes_repository/') === 0) {
+            if (strpos($abs_addon_filepath, 'app/addons/' . $addon_id . '/themes_repository/') !== false) {
+                $abs_cart_filepath = $abs_cart_path . str_replace('app/addons/' . $addon_id . '/themes_repository/', 'design/themes/', $rel_filepath);
+            } elseif ($input->getOption('templates-to-design') && mb_strpos($rel_filepath, 'var/themes_repository/') === 0) {
                 $abs_cart_filepath = $abs_cart_path
                     . 'design/themes/'
                     . mb_substr($rel_filepath, mb_strlen('var/themes_repository/'));
@@ -133,7 +135,6 @@ class AddonSymlinkCommand extends Command
                 ) . basename($abs_cart_filepath)
                 : $abs_addon_filepath;
 
-            $abs_cart_filepath = str_replace('full_themes', 'themes', $abs_cart_filepath);
             $fs->symlink(
                 $symlink_target_filepath,
                 $abs_cart_filepath
