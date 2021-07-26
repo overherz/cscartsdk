@@ -34,6 +34,7 @@ class Addon
         $addon_files_glob_masks = [
             // General files
             "app/addons/{$this->id}",
+            "app/addons/{$this->id}/themes_repository/*",            
             "var/langs/**/addons/{$this->id}.po",
             "js/addons/{$this->id}",
 
@@ -50,7 +51,6 @@ class Addon
             "design/themes/**/mail/templates/addons/{$this->id}",
             "design/themes/**/media/images/addons/{$this->id}",
             "design/themes/**/media/images/logos/addons/{$this->id}",
-            "design/full_themes/*",
 
             "var/themes_repository/**/css/addons/{$this->id}",
             "var/themes_repository/**/templates/addons/{$this->id}",
