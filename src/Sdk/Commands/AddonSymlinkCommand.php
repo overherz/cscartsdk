@@ -53,7 +53,7 @@ class AddonSymlinkCommand extends Command
     /**
      * @inheritdoc
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $fs = new Filesystem();
 
@@ -144,5 +144,7 @@ class AddonSymlinkCommand extends Command
                 $rel_filepath
             ));
         }
+
+        return Command::SUCCESS;
     }
 }
